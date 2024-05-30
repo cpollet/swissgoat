@@ -4,4 +4,13 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+axum = "0.7.5"
 rand = "0.8.5"
+tokio = { version = "1.37.0" , features = ["rt-multi-thread", "signal"] }
+
+[build-dependencies]
+mime_guess = "2.0.4"
+
+[profile.release]
+strip = true
+lto = true

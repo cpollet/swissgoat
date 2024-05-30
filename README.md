@@ -1,6 +1,7 @@
 # Swissgoat
 
-## Command line mode
+## Start HTTP server
 ```
-$ swissgoat | feh -
+$ swissgoat
 ```
+
